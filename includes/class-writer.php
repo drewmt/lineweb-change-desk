@@ -17,7 +17,7 @@ final class Writer {
 		if ( is_wp_error( $job ) ) {
 			return $job;
 		}
-		if ( $job['owner'] !== get_current_user_id() ) {
+		if ( get_current_user_id() !== $job['owner'] ) {
 			return Jobs::forbidden();
 		}
 		$targets   = array();
@@ -48,7 +48,7 @@ final class Writer {
 					if ( is_wp_error( $job ) ) {
 						return $job;
 					}
-					if ( $job['owner'] !== get_current_user_id() ) {
+					if ( get_current_user_id() !== $job['owner'] ) {
 						return Jobs::forbidden();
 					}
 					if ( isset( $job['operations'][ $operation ] ) ) {
@@ -76,7 +76,7 @@ final class Writer {
 					$state  = 'conflict';
 					$lock   = (string) $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM {$wpdb->postmeta} WHERE post_id=%d AND meta_key='_edit_lock' LIMIT 1", $id ) );
 					$parts  = explode( ':', $lock );
-					$locked = isset( $parts[1] ) && (int) $parts[0] > time() - (int) apply_filters( 'wp_check_post_lock_window', 150 ) && (int) $parts[1] !== get_current_user_id();
+					$locked = isset( $parts[1] ) && (int) $parts[0] > time() - (int) apply_filters( 'wp_check_post_lock_window', 150 ) && get_current_user_id() !== (int) $parts[1];
 					if ( $row && Scope::can_edit_source( new \WP_Post( $row ) ) && ! $locked && ! $job['inflight'] && ! in_array( $job['status'], array( 'pending', 'analyzing' ), true ) ) {
 						$snapshot = $job['snapshots'][ $id ] ?? null;
 						$expected = $restore ? ( $snapshot['after_hash'] ?? '' ) : $job['sources'][ $id ]['hash'];

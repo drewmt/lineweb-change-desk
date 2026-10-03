@@ -2,7 +2,7 @@
 namespace Lineweb\ChangeDesk\Tests;
 
 use Lineweb\ChangeDesk\Provider;
-$file = dirname( __DIR__ ) . '/includes/provider.php';
+$file = dirname( __DIR__ ) . '/includes/class-provider.php';
 ok( is_file( $file ), 'Native provider pipeline exists' );
 require_once $file;
 $fields = array();

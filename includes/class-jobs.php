@@ -128,7 +128,7 @@ final class Jobs {
 	public static function get( int $id ): array|\WP_Error {
 		global $wpdb;
 		$post = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$wpdb->posts} WHERE ID=%d AND post_type='lwcd_job'", $id ) );
-		if ( ! $post || ! current_user_can( 'edit_others_posts' ) || ( (int) $post->post_author !== get_current_user_id() && ! current_user_can( 'manage_options' ) ) ) {
+		if ( ! $post || ! current_user_can( 'edit_others_posts' ) || ( get_current_user_id() !== (int) $post->post_author && ! current_user_can( 'manage_options' ) ) ) {
 			return self::forbidden();
 		}
 		$data = json_decode( $post->post_content, true );
@@ -153,7 +153,7 @@ final class Jobs {
 				$job = self::get( $id );
 				if ( is_wp_error( $job ) ) {
 					return $job;
-				}if ( $job['owner'] !== get_current_user_id() ) {
+				}if ( get_current_user_id() !== $job['owner'] ) {
 					return self::forbidden();
 				}
 				$remaining = $job['cursor'] + ( $job['inflight'] ? 1 : 0 );
@@ -168,7 +168,7 @@ final class Jobs {
 	}
 	public static function delete( int $id ): bool|\WP_Error {
 		$post = get_post( $id );
-		if ( ! $post || 'lwcd_job' !== $post->post_type || ! current_user_can( 'edit_others_posts' ) || ( (int) $post->post_author !== get_current_user_id() && ! current_user_can( 'manage_options' ) ) ) {
+		if ( ! $post || 'lwcd_job' !== $post->post_type || ! current_user_can( 'edit_others_posts' ) || ( get_current_user_id() !== (int) $post->post_author && ! current_user_can( 'manage_options' ) ) ) {
 			return self::forbidden();
 		}
 		return Db::guard( array( $id ), static fn()=>wp_delete_post( $id, true ) ? true : Db::error() );

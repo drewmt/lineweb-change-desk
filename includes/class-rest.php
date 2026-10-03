@@ -237,7 +237,7 @@ final class Rest {
 				if ( is_wp_error( $job ) ) {
 					return $job;
 				}
-				if ( $job['owner'] !== get_current_user_id() ) {
+				if ( get_current_user_id() !== $job['owner'] ) {
 					return Jobs::forbidden();
 				}
 				$job = self::recover( $job );

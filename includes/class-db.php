@@ -13,6 +13,7 @@ final class Db {
 		$supported = true;
 		foreach ( array( $wpdb->posts, $wpdb->postmeta, $wpdb->options ) as $table ) {
 			$row = $wpdb->get_row( $wpdb->prepare( 'SHOW TABLE STATUS WHERE Name = %s', $table ) );
+			// phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase -- MySQL names its storage-engine status column Engine.
 			if ( ! $row || 'InnoDB' !== $row->Engine ) {
 				$supported = false;
 				break;

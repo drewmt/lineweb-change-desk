@@ -1,5 +1,5 @@
 === Lineweb Change Desk ===
-Contributors: drewmt
+Contributors: linewebdigital
 Tags: gutenberg, content management, bulk edit, ai, editorial
 Requires at least: 7.0
 Tested up to: 7.1
@@ -29,6 +29,14 @@ Limit: ten sources, 60,000 supported characters, 1,000 fields and 1 MB raw conte
 
 Exact mode contacts no service. AI mode sends only the explicitly confirmed excerpts, opaque field IDs and instruction to the named WordPress-configured provider. There is no hardcoded provider or fallback. Review any personal data in the preview and the privacy/terms links supplied by your chosen provider's Connector before sending. AI data is not sent to Lineweb. Credentials stay with WordPress/the provider plugin.
 
+An AI service account, API credentials and any provider charges are needed only if you choose AI mode. WordPress supplies the AI Client, not a free model subscription. The provider plugin manages endpoint/model selection; Change Desk does not contact all of the services below. Common optional Connectors include:
+
+* OpenAI API: https://platform.openai.com/ (typically api.openai.com). Terms: https://openai.com/policies/services-agreement/ . Privacy: https://openai.com/policies/privacy-policy/ .
+* Anthropic API: https://www.anthropic.com/api (typically api.anthropic.com). Terms: https://www.anthropic.com/legal/commercial-terms . Privacy: https://www.anthropic.com/legal/privacy .
+* Google Gemini API: https://ai.google.dev/ (typically generativelanguage.googleapis.com). Terms: https://ai.google.dev/gemini-api/terms . Privacy: https://policies.google.com/privacy .
+
+These links document possible services, not a guarantee that every model supports this plugin's structured-response contract. For another provider or custom endpoint, review that Connector's actual destination, service terms and privacy policy. No external request is made during activation or an exact text change.
+
 At most 20 reserved requests per user and 50 per site per UTC day. Failed/interrupted attempts may consume quota without a billed call. Cancellation stops future requests, not an already sent one. Unknown provider outcomes are not automatically retried; after ten minutes the job needs verification. Human-approved existing proposals remain reviewable once no call is outstanding. Live provider quality has not been established by the synthetic SDK tests.
 
 = History, retention and restore =
@@ -40,9 +48,9 @@ Restore refuses newer edits and cannot undo emails/webhooks or other third-party
 = Source and build =
 
 Readable source and build instructions: https://github.com/drewmt/lineweb-change-desk
-Admin JS/SCSS: src/admin/. Compiled JS/CSS: build/admin/. Run npm ci --legacy-peer-deps, npm run build and npm run plugin-zip. WordPress-provided React/API libraries are externalized, not shipped as a separate frontend runtime.
+Admin JS/SCSS: src/admin/. Compiled JS/CSS: build/admin/. Run npm ci --legacy-peer-deps, npm run build and npm run plugin-zip:wordpress for the directory ZIP. npm run plugin-zip creates the separate direct-install ZIP with bundled Greek catalogs. Both require only the standalone public repository, not internal Lineweb files. WordPress-provided React/API libraries are externalized, not shipped as a separate frontend runtime.
 
-English and Greek catalogs are available for direct installations. Directory language packs are not yet approved and follow WordPress.org policy at submission.
+The directory ZIP uses English fallback and WordPress.org language packs, with no bundled translated catalogs. Greek translation source remains in the public development repository and the separate direct-install ZIP. A Greek directory language pack has not yet been approved; it is not advertised as available from WordPress.org.
 
 == Installation ==
 

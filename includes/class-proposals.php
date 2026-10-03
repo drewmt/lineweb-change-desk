@@ -4,7 +4,8 @@ namespace Lineweb\ChangeDesk;
 defined( 'ABSPATH' ) || exit;
 final class Proposals {
 	public static function length( string $text ): int {
-		return preg_match_all( '/./us', $text, $matches ) ?: 0;
+		$count = preg_match_all( '/./us', $text, $matches );
+		return false === $count ? 0 : $count;
 	}
 	public static function plain( $text, int $limit = 12000 ): bool {
 		return is_string( $text ) && 1 === preg_match( '//u', $text ) && ! preg_match( '/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/', $text )

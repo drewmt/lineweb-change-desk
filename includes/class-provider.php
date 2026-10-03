@@ -56,7 +56,9 @@ final class Provider {
 				}
 			}
 		} catch ( \Throwable $e ) {
-			/* Do not expose provider exception content or credentials. */ }
+			// Return the unavailable status without exposing credentials or provider errors.
+			return $out;
+		}
 		return $out;
 	}
 	private static function builder( string $prompt, string $id ): \WP_AI_Client_Prompt_Builder {
@@ -161,7 +163,9 @@ final class Provider {
 				$out['failed_ids']   = array();
 			}
 		} catch ( \Throwable $e ) {
-			/* Failed chunk stays failed; never retry a potentially billed call. */ }
+			// Failed chunks stay failed; never retry a potentially billed call.
+			return $out;
+		}
 		return $out;
 	}
 	private static function invalid(): \WP_Error {

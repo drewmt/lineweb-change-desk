@@ -5,6 +5,8 @@ const files = new Set( [
 	`${ slug }.php`,
 	'uninstall.php',
 	'readme.txt',
+	'LICENSE',
+	'languages/README.txt',
 	'assets/admin.css',
 	'assets/lineweb-logo.png',
 	'build/admin/index.js',
@@ -21,9 +23,9 @@ const files = new Set( [
 		'quota',
 		'rest',
 		'scope',
-		'text-fields',
+		'textfields',
 		'writer',
-	].map( ( name ) => `includes/${ name }.php` ),
+	].map( ( name ) => `includes/class-${ name }.php` ),
 	`languages/${ slug }.pot`,
 	...[ 'el', 'el_GR' ].flatMap( ( locale ) => [
 		`languages/${ slug }-${ locale }.po`,
@@ -40,7 +42,18 @@ const directories = new Set( [
 	'languages/',
 ] );
 
-export function validateRuntimeEntries( entries ) {
+const directoryFiles = new Set(
+	[ ...files ].filter(
+		( file ) =>
+			! file.startsWith( 'languages/' ) || file === 'languages/README.txt'
+	)
+);
+
+export function validateRuntimeEntries( entries, profile = 'direct' ) {
+	if ( ! [ 'direct', 'wordpress' ].includes( profile ) ) {
+		throw new Error( `Unknown release profile: ${ profile }` );
+	}
+	const requiredFiles = profile === 'wordpress' ? directoryFiles : files;
 	const found = new Set();
 	for ( const entry of entries ) {
 		if (
@@ -54,13 +67,13 @@ export function validateRuntimeEntries( entries ) {
 		const relative = entry.slice( slug.length + 1 );
 		if (
 			found.has( relative ) ||
-			( ! files.has( relative ) && ! directories.has( relative ) )
+			( ! requiredFiles.has( relative ) && ! directories.has( relative ) )
 		) {
 			throw new Error( `Unexpected release entry: ${ entry }` );
 		}
 		found.add( relative );
 	}
-	for ( const file of files ) {
+	for ( const file of requiredFiles ) {
 		if ( ! found.has( file ) ) {
 			throw new Error( `Missing release file: ${ file }` );
 		}
@@ -68,5 +81,8 @@ export function validateRuntimeEntries( entries ) {
 	return entries;
 }
 export const expectedRuntimeEntries = [ ...files ].map(
+	( file ) => `${ slug }/${ file }`
+);
+export const expectedWordPressEntries = [ ...directoryFiles ].map(
 	( file ) => `${ slug }/${ file }`
 );

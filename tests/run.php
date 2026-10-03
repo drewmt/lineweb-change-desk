@@ -5,7 +5,7 @@ require_once __DIR__ . '/helpers.php';
 define( 'ABSPATH', __DIR__ );
 class_exists( 'WP_Error' ) || require __DIR__ . '/wp-error.php';
 function_exists( 'is_wp_error' ) || require __DIR__ . '/wp-functions.php';
-$file = dirname( __DIR__ ) . '/includes/proposals.php';
+$file = dirname( __DIR__ ) . '/includes/class-proposals.php';
 ok( is_file( $file ), 'Proposal validation exists' );
 require_once $file;
 use Lineweb\ChangeDesk\Proposals;

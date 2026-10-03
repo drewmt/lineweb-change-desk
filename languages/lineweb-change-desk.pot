@@ -17,176 +17,177 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: includes/admin.php:7
+#: includes/class-admin.php:7
 msgid "Lineweb Change Desk"
 msgstr ""
 
-#: includes/admin.php:7
+#: includes/class-admin.php:7
 msgid "Change Desk"
 msgstr ""
 
-#: includes/admin.php:36
+#: includes/class-admin.php:36
 msgid "You cannot access this page."
 msgstr ""
 
-#: includes/admin.php:42
+#: includes/class-admin.php:42
 msgid "Keep business information consistent."
 msgstr ""
 
-#: includes/admin.php:43
+#: includes/class-admin.php:43
 msgid ""
 "New opening hours, a changed policy, an updated service. Find the old "
 "references, review each proposal and change only what you approve."
 msgstr ""
 
-#: includes/admin.php:44
+#: includes/class-admin.php:44
 msgid "Start a reviewed change"
 msgstr ""
 
-#: includes/admin.php:44
+#: includes/class-admin.php:44
 msgid "View history"
 msgstr ""
 
-#: includes/admin.php:46
+#: includes/class-admin.php:46
 msgid "Lineweb branding"
 msgstr ""
 
-#: includes/admin.php:46
+#: includes/class-admin.php:46
 msgid "You review. You decide."
 msgstr ""
 
-#: includes/admin.php:46
+#: includes/class-admin.php:46
 msgid "Version 0.1 · No autonomous publishing"
 msgstr ""
 
-#: includes/admin.php:48
+#: includes/class-admin.php:48
 msgid "Loading your workspace…"
 msgstr ""
 
-#: includes/admin.php:49
+#: includes/class-admin.php:49
 msgid "A free, independent WordPress tool."
 msgstr ""
 
-#: includes/admin.php:49
+#: includes/class-admin.php:49
 msgid ""
 "No Lineweb account or telemetry. AI sends selected text to your configured "
 "provider only after confirmation; provider charges may apply."
 msgstr ""
 
-#: includes/admin.php:49
+#: includes/class-admin.php:49
 msgid "Support"
 msgstr ""
 
-#: includes/db.php:58
+#: includes/class-db.php:59
 msgid ""
 "Transactional storage could not be verified. Refresh job status and inspect "
 "the source before repeating any write."
 msgstr ""
 
-#: includes/jobs.php:55 includes/rest.php:98 includes/rest.php:255
+#: includes/class-jobs.php:55 includes/class-rest.php:98
+#: includes/class-rest.php:255
 msgid "A source changed. Preview again."
 msgstr ""
 
-#: includes/jobs.php:136
+#: includes/class-jobs.php:136
 msgid "This job has expired."
 msgstr ""
 
-#: includes/jobs.php:212
+#: includes/class-jobs.php:212
 msgid "You cannot access this job or its source content."
 msgstr ""
 
-#: includes/proposals.php:24
+#: includes/class-proposals.php:25
 msgid "Exact text match. No AI request."
 msgstr ""
 
-#: includes/proposals.php:60
+#: includes/class-proposals.php:61
 msgid "The proposal does not match a safe source field."
 msgstr ""
 
-#: includes/provider.php:36
+#: includes/class-provider.php:36
 msgid ""
 "AI is unavailable. Configure a compatible provider in WordPress Settings > "
 "Connectors. Exact text changes work without AI."
 msgstr ""
 
-#: includes/provider.php:47
+#: includes/class-provider.php:47
 #. translators: %s: selected WordPress AI provider identifier.
 #, php-format
 msgid "Selected WordPress provider: %s. AI usage may be charged by your provider."
 msgstr ""
 
-#: includes/provider.php:120
+#: includes/class-provider.php:122
 msgid "The configured provider changed. Start a new preview."
 msgstr ""
 
-#: includes/provider.php:131 includes/quota.php:30
+#: includes/class-provider.php:133 includes/class-quota.php:30
 msgid "Daily AI request limit reached."
 msgstr ""
 
-#: includes/provider.php:168
+#: includes/class-provider.php:172
 msgid "The AI result is incomplete or does not match the selected source fields."
 msgstr ""
 
-#: includes/rest.php:36
+#: includes/class-rest.php:36
 msgid "Your session expired. Refresh the page before continuing."
 msgstr ""
 
-#: includes/rest.php:156
+#: includes/class-rest.php:156
 msgid ""
 "Analysis was interrupted. The provider request may have been charged. This "
 "job will not repeat it. Review existing proposals or start a new preview "
 "manually."
 msgstr ""
 
-#: includes/rest.php:251
+#: includes/class-rest.php:251
 msgid "Analysis is complete, cancelled or already in progress. Refresh job status."
 msgstr ""
 
-#: includes/rest.php:260
+#: includes/class-rest.php:260
 msgid "The configured provider changed or is unavailable. Start a new preview."
 msgstr ""
 
-#: includes/rest.php:274
+#: includes/class-rest.php:274
 msgid "Analysis needs verification and will not be repeated."
 msgstr ""
 
-#: includes/rest.php:332
+#: includes/class-rest.php:332
 msgid "Check the selected sources and input limits."
 msgstr ""
 
-#: includes/scope.php:13
+#: includes/class-scope.php:13
 msgid "Select between one and ten unique posts or pages."
 msgstr ""
 
-#: includes/scope.php:24
+#: includes/class-scope.php:24
 msgid "Invalid source ID."
 msgstr ""
 
-#: includes/scope.php:28
+#: includes/class-scope.php:28
 msgid "You cannot edit one of the selected sources."
 msgstr ""
 
-#: includes/scope.php:31
+#: includes/class-scope.php:31
 msgid "This source is too large for safe analysis."
 msgstr ""
 
-#: includes/scope.php:38
+#: includes/class-scope.php:38
 msgid "Selected text exceeds the analysis limit. Select fewer sources."
 msgstr ""
 
-#: includes/text-fields.php:20
+#: includes/class-textfields.php:20
 msgid "Block markup cannot be safely round-tripped."
 msgstr ""
 
-#: includes/text-fields.php:57
+#: includes/class-textfields.php:57
 msgid "Manual review: unsupported block or markup."
 msgstr ""
 
-#: includes/writer.php:63
+#: includes/class-writer.php:63
 msgid "Job operation limit reached. Start a new preview."
 msgstr ""
 
-#: includes/writer.php:164
+#: includes/class-writer.php:164
 msgid "Invalid selection or operation ID."
 msgstr ""
 

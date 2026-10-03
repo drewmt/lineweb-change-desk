@@ -81,22 +81,27 @@ jobs:
         with: {node-version: 22, cache: npm}
       - run: npm ci --legacy-peer-deps --no-audit --no-fund
       - run: npm run build && npm run plugin-zip
+      - run: npm run plugin-zip:wordpress
       - run: node tools/make-upgrade-fixture.mjs
       - run: node tools/write-ci-wp-env.mjs
         env: {WP_ENV_MODE: archive}
       - run: npm run env:start
       - run: npx wp-env run cli wp plugin install /var/www/html/wp-content/lineweb-ci/lineweb-change-desk-0.0.0.zip --activate
-      - run: npx wp-env run cli wp plugin install /var/www/html/wp-content/lineweb-ci/lineweb-change-desk.zip --force
+      - run: npx wp-env run cli wp plugin install /var/www/html/wp-content/lineweb-ci/lineweb-change-desk-wordpress-org.zip --force
       - run: npx wp-env run cli wp plugin deactivate lineweb-change-desk
       - run: npx wp-env run cli wp plugin activate lineweb-change-desk
       - run: for test in content provider jobs write rest analysis review; do npx wp-env run cli wp eval-file /var/www/html/wp-content/lineweb-tests/$test-smoke.php || exit 1; done
       - run: npx wp-env run cli wp plugin install plugin-check --activate
+      - run: npx wp-env run cli php /var/www/html/wp-content/plugins/plugin-check/vendor/bin/phpcs --standard=WordPress-Extra --extensions=php --ignore='*/build/*' /var/www/html/wp-content/plugins/lineweb-change-desk
+      - run: npx wp-env run cli wp language core install el
+      - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/lineweb-tests/language-pack-smoke.php fallback
+      - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/lineweb-tests/language-pack-smoke.php pack
       - run: npx wp-env run cli wp plugin check lineweb-change-desk --format=strict-json > plugin-check-report.json
       - run: node tools/check-plugin-report.mjs plugin-check-report.json
       - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/lineweb-tests/uninstall-smoke.php
       - uses: actions/upload-artifact@v4
         with:
           name: lineweb-change-desk-candidate
-          path: lineweb-change-desk.zip
+          path: lineweb-change-desk-wordpress-org.zip
       - if: always()
         run: npm run env:stop

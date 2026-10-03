@@ -46,11 +46,13 @@ The optional AI mode uses WordPress 7.0's native AI Client, with no bundled prov
 
 Only the confirmed extracted text, opaque field IDs and your instruction are sent. Text may contain personal information: review the preview and your legal basis before transfer. Your chosen provider's privacy, retention and pricing terms apply. No AI data is sent to Lineweb. Exact mode sends nothing externally.
 
+Common optional services: [OpenAI API](https://platform.openai.com/) ([terms](https://openai.com/policies/services-agreement/), [privacy](https://openai.com/policies/privacy-policy/)); [Anthropic API](https://www.anthropic.com/api) ([terms](https://www.anthropic.com/legal/commercial-terms), [privacy](https://www.anthropic.com/legal/privacy)); [Gemini API](https://ai.google.dev/) ([terms](https://ai.google.dev/gemini-api/terms), [privacy](https://policies.google.com/privacy)). These are examples, not automatic connections or a promise of model compatibility. Another Connector or custom endpoint has its own destination and terms. Configure and review the actual selected provider before consenting to transfer.
+
 Daily UTC quotas are 20 reserved calls per user and 50 per site. Reservations are recorded before dispatch; failed/interrupted attempts can consume quota even when the provider did not bill. Provider charges are not estimated or refunded by this plugin. Cancel stops future chunks; it cannot revoke a request already sent.
 
 Jobs, excerpts and restore snapshots are private and expire after 30 days. Expired jobs cannot be used and are deleted in bounded hourly batches when WP-Cron runs. Deleting a selected source removes its **entire associated job**, including the other sources' restore history. Delete private history manually if you need earlier removal. Deactivation stops cleanup but keeps content and jobs; uninstall removes only the plugin's jobs, counters and scheduled event, leaving source posts and revisions unchanged.
 
-![Mobile workspace with the full centered LineWeb logo](wordpress-org-assets/screenshot-3.png)
+![Mobile review cards and final confirmation](wordpress-org-assets/screenshot-3.png)
 
 ## Requirements and installation
 
@@ -66,10 +68,11 @@ npm run lint:css
 npm run lint:php
 npm run build
 npm run plugin-zip
+npm run plugin-zip:wordpress
 ```
 
 JavaScript uses WordPress-provided React and API libraries on this admin screen only. There are no storefront assets or frontend React runtime. Readable source is in `src/admin/`; compiled assets are in `build/admin/`. Tests use synthetic content and an in-memory native SDK fixture, not a live model demonstration. A real configured-provider evaluation and two approved staging installations remain required before a public production release.
 
-English and native Greek (`el`, with `el_GR` compatibility) are included for direct installation. WordPress.org language packs have not been approved; a directory submission will use its language-pack policy.
+`lineweb-change-desk.zip` is the direct-install build, including English and native Greek (`el`, with `el_GR` compatibility). `lineweb-change-desk-wordpress-org.zip` is the directory build: no bundled locale catalogs or development files, with the same PHP/JS/CSS runtime, license and public readme. It falls back to English and supports translations from `wp-content/languages/plugins/`. WordPress.org Greek language packs have not been approved; fixture tests are not approval or distribution evidence.
 
 All screenshots use synthetic demonstration content. [Support](SUPPORT.md) · [Security policy](SECURITY.md) · [Lineweb](https://lineweb.gr/)

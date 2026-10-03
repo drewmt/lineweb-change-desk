@@ -21,6 +21,7 @@ const mappings =
 					process.env.ARCHIVE_ROOT || '.'
 				),
 				'wp-content/lineweb-tests': path.join( root, 'tests' ),
+				'wp-content/lineweb-catalogs': path.join( root, 'languages' ),
 		  };
 await writeFile(
 	'.wp-env.json',

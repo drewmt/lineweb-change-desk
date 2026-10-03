@@ -18,6 +18,42 @@ import {
 	validateRuntimeEntries,
 } from '../tools/runtime-allowlist.mjs';
 validateRuntimeEntries( expectedRuntimeEntries );
+const directoryEntries = [
+	...expectedRuntimeEntries.filter(
+		( entry ) =>
+			! entry.includes( '/languages/' ) && ! entry.endsWith( '/LICENSE' )
+	),
+	'lineweb-change-desk/LICENSE',
+	'lineweb-change-desk/languages/README.txt',
+];
+validateRuntimeEntries( directoryEntries, 'wordpress' );
+for ( const catalog of [
+	'lineweb-change-desk-el.po',
+	'lineweb-change-desk-el.mo',
+	'lineweb-change-desk-el.l10n.php',
+	'lineweb-change-desk-el-lwcd-admin.json',
+	'lineweb-change-desk.pot',
+] ) {
+	assert.throws( () =>
+		validateRuntimeEntries(
+			[
+				...directoryEntries,
+				`lineweb-change-desk/languages/${ catalog }`,
+			],
+			'wordpress'
+		)
+	);
+}
+assert.throws( () =>
+	validateRuntimeEntries(
+		directoryEntries.filter( ( entry ) => ! entry.endsWith( '/LICENSE' ) ),
+		'wordpress'
+	)
+);
+assert.throws( () => validateRuntimeEntries( directoryEntries, 'unknown' ) );
+process.stdout.write(
+	'PASS directory package requires license and excludes translation catalogs.\n'
+);
 for ( const forbidden of [
 	'docs/private-state.md',
 	'docs/spec.md',
