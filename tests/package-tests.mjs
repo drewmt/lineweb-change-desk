@@ -4,6 +4,10 @@ import { assertPluginReport } from '../tools/check-plugin-report.mjs';
 const packageJson = JSON.parse(
 	readFileSync( new URL( '../package.json', import.meta.url ), 'utf8' )
 );
+assert.ok(
+	packageJson.scripts[ 'plugin-zip' ].includes( 'make-release-zip.mjs' ),
+	'Package only exact runtime files, not npm mandatory source documents.'
+);
 assert.equal(
 	packageJson.devDependencies.eslint,
 	'9.39.5',

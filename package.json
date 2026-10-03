@@ -13,7 +13,7 @@
     "env:start": "wp-env start",
     "env:stop": "wp-env stop",
     "env:activate": "wp-env run cli wp plugin activate lineweb-change-desk",
-    "plugin-zip": "wp-scripts plugin-zip && node tools/check-package.mjs",
+    "plugin-zip": "node tools/make-release-zip.mjs && node tools/check-package.mjs",
     "test:e2e": "playwright test --config playwright.config.ts",
     "lint:php": "find . -path ./node_modules -prune -o -path ./build -prune -o -name '*.php' -exec php -l {} +"
   },

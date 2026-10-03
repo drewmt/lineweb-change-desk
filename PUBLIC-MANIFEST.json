@@ -135,7 +135,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "a00cd3a15895801fd197f44d224d8aa23a911ec0387bb288a1aa2be9f6f69e43"
+      "sha256": "bd84d84973fe990476a4cd4ed17faba7fc61a96b3155d5240353855cc230f60a"
     },
     {
       "path": "playwright.config.ts",
@@ -187,7 +187,7 @@
     },
     {
       "path": "tests/package-tests.mjs",
-      "sha256": "812c221d012a022a86fb93edfbdea6efd251017b3f17fcff87e3ef6e02ebd75e"
+      "sha256": "ee9a3949f6375eb84c6b181a4013fc40998443f159ad5430bc19c0f877135bdc"
     },
     {
       "path": "tests/provider-smoke.php",
@@ -240,6 +240,10 @@
     {
       "path": "tools/check-plugin-report.mjs",
       "sha256": "31f1d99b22b18de73a98d0cfb0ba59926ff4e4ca82fa640c894e108040fcd918"
+    },
+    {
+      "path": "tools/make-release-zip.mjs",
+      "sha256": "8d06e6a44a37aeade139747709d51b632a68cd94c81ed58db200d02589d9e1f6"
     },
     {
       "path": "tools/make-upgrade-fixture.mjs",
