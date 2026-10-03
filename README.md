@@ -71,7 +71,7 @@ npm run plugin-zip
 npm run plugin-zip:wordpress
 ```
 
-JavaScript uses WordPress-provided React and API libraries on this admin screen only. There are no storefront assets or frontend React runtime. Readable source is in `src/admin/`; compiled assets are in `build/admin/`. Tests use synthetic content and an in-memory native SDK fixture, not a live model demonstration. A real configured-provider evaluation and two approved staging installations remain required before a public production release.
+JavaScript uses WordPress-provided React and API libraries on this admin screen only. There are no storefront assets or frontend React runtime. Readable source is in `src/admin/`; compiled assets are in `build/admin/`. Automated tests use synthetic content and an in-memory native SDK fixture. A separate local evaluation on 2026-10-03 passed six real OpenAI requests through the official Connector and native AI Client using gpt-6.1-sol: English/Greek updates, no-change results, source-injection resistance, cancellation, and browser approval/apply/restore. This is limited provider/model evidence, not a guarantee for other models or production environments. WordPress.org submission and manual approval remain separate from this release candidate.
 
 `lineweb-change-desk.zip` is the direct-install build, including English and native Greek (`el`, with `el_GR` compatibility). `lineweb-change-desk-wordpress-org.zip` is the directory build: no bundled locale catalogs or development files, with the same PHP/JS/CSS runtime, license and public readme. It falls back to English and supports translations from `wp-content/languages/plugins/`. WordPress.org Greek language packs have not been approved; fixture tests are not approval or distribution evidence.
 
