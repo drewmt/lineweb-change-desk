@@ -1,5 +1,14 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { assertPluginReport } from '../tools/check-plugin-report.mjs';
+const packageJson = JSON.parse(
+	readFileSync( new URL( '../package.json', import.meta.url ), 'utf8' )
+);
+assert.equal(
+	packageJson.devDependencies.eslint,
+	'9.39.5',
+	'Declare the compatible jsdoc ESLint peer rather than relying on an ancestor workspace.'
+);
 import {
 	expectedRuntimeEntries,
 	validateRuntimeEntries,

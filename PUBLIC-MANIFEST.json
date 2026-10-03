@@ -131,11 +131,11 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "2cff3fa182fd536e6a7b175d50b845df7c93c72e27bc40b84bddc7b5b8c97509"
+      "sha256": "7853fc959d6bfe9b9a0184d2bc1535e7e4368b4b7a3d6861e60a0b71070e45e6"
     },
     {
       "path": "package.json",
-      "sha256": "cf173e644f2a5339d83316d865c35ee0785708cfe00e7a8fbf223accbd3f1159"
+      "sha256": "a00cd3a15895801fd197f44d224d8aa23a911ec0387bb288a1aa2be9f6f69e43"
     },
     {
       "path": "playwright.config.ts",
@@ -187,7 +187,7 @@
     },
     {
       "path": "tests/package-tests.mjs",
-      "sha256": "400e83b6ebb6abd18fe4878e5178dbb1502db4f78e2cee3aefa4bb6e8ab38fb3"
+      "sha256": "812c221d012a022a86fb93edfbdea6efd251017b3f17fcff87e3ef6e02ebd75e"
     },
     {
       "path": "tests/provider-smoke.php",
