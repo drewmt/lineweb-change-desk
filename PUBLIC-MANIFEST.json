@@ -1,0 +1,297 @@
+{
+  "plugin": "lineweb-change-desk",
+  "files": [
+    {
+      "path": ".github/workflows/quality.yml",
+      "sha256": "cde0ec1bb6ce390ae4696c60311491d5e4ef9bc9e4a3574e11cbcf6323f0222f"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "c25c272c7f1c6a3e43d9f90209af195af9693a296cb6b389238049fe0c71ded8"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "f0bc8f3735aebe2311d15bb1d7037d434c62b1f582b4ac485f63c6175c0c6214"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e8aa9b9f83a05d23356b4b5430549340ddafc0ec5d1edecd21d3d15d4e337180"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e4cb9e9b3ab7659f1d616ba2f2d8bc2da80525cafc61a1ee12fc60d7bfffcd99"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "1291a31817a01e93ba442c668d1daa71e3e961624a0e5b19b356e4310f5af972"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "9be0c8063aa5321fbcb67a4ec7c74e543755bc0ba8442a635de10d043428cd6d"
+    },
+    {
+      "path": "assets/admin.css",
+      "sha256": "24296b5a39dd2d7b263ba92479089ae007273d2a5251e66b89e3202491c49afc"
+    },
+    {
+      "path": "assets/lineweb-logo.png",
+      "sha256": "0aa0e744e33029b30875eba73f4cb3b6eeb8a46230ba0e5873fe071171e38a4f"
+    },
+    {
+      "path": "build/admin/index.asset.php",
+      "sha256": "f6541816b2ecdc45273eb4506137b4ad0dd5e07a18a7030faf3c9bcf6f9d9edd"
+    },
+    {
+      "path": "build/admin/index.js",
+      "sha256": "8c773e380de06f19f4acae22eb70d3b66d6a7f88e56f5734c52cba826c62bc90"
+    },
+    {
+      "path": "build/admin/style-index-rtl.css",
+      "sha256": "1bc2091bf06407fae8e130d3330354643ddbdd973248aa91797efb02f01fc9d6"
+    },
+    {
+      "path": "build/admin/style-index.css",
+      "sha256": "38bc2e8afa3aff9f50f7de5f3c6bcd36eb0ae6881c0dea28cdc92df8db80eb26"
+    },
+    {
+      "path": "includes/admin.php",
+      "sha256": "64556d20a73a6c4d407ef3e9373d71edee9fd385a3da4993df5dcd9dd7c05306"
+    },
+    {
+      "path": "includes/db.php",
+      "sha256": "beb043853c4c89dfcd7bd291a0cdce5b568dcb22f8d1aa1ea947ad651de62a79"
+    },
+    {
+      "path": "includes/jobs.php",
+      "sha256": "8476c51848384512bd90d67cc3da57b0ef931b0497b3c054b3068257c8103179"
+    },
+    {
+      "path": "includes/lifecycle.php",
+      "sha256": "1cad03778e38391135c249530417165c838beb88ac9047b02f415c775c16e0e5"
+    },
+    {
+      "path": "includes/proposals.php",
+      "sha256": "85a010430fee0d342bc2c902ae6fd9edf7cb05ead988c43bd23a2974aa6b5e65"
+    },
+    {
+      "path": "includes/provider.php",
+      "sha256": "acfee6fa5eea84ab610014d8f9048ddf7702f17f08506d2bc89c5342094d204a"
+    },
+    {
+      "path": "includes/quota.php",
+      "sha256": "3a3a3449d17128ac1997bc9b9e0b224a0469eea9040a80f4749f63f8d675f3b3"
+    },
+    {
+      "path": "includes/rest.php",
+      "sha256": "be86415a7b8e1109ec2645cff34588f504f33b60193f8e4c7212008ae20e4f83"
+    },
+    {
+      "path": "includes/scope.php",
+      "sha256": "9f2d8670d9cfa1a960ebbd70dc8de9186680989f06a2f291a2a81825f12a8e7d"
+    },
+    {
+      "path": "includes/text-fields.php",
+      "sha256": "7f57470db3669f5840654332f60492261b0aa7684a8b3ad60d8a787ef8de0774"
+    },
+    {
+      "path": "includes/writer.php",
+      "sha256": "52c2980cd2a7fa7db93f2e2e10f1173c241b9c7266579da09613711c2a2cf582"
+    },
+    {
+      "path": "languages/lineweb-change-desk-el-lwcd-admin.json",
+      "sha256": "2af313e9a1cbf14e5d3ec6afabecbbd758f91575e1842f73a9bc9747c9c0779b"
+    },
+    {
+      "path": "languages/lineweb-change-desk-el.mo",
+      "sha256": "799d7606438e934b6592fe35eda8315bb217eaefb348fd12884e0815dbda18cf"
+    },
+    {
+      "path": "languages/lineweb-change-desk-el.po",
+      "sha256": "2690b76aa2088b2404f8afaf0ebf2825892562520c7742f463dc9d7bab04a860"
+    },
+    {
+      "path": "languages/lineweb-change-desk-el_GR-lwcd-admin.json",
+      "sha256": "dff9b9d38164de495f1cec69ec2f5452f4df5383edd248aa55aa1d2ed6f7acaf"
+    },
+    {
+      "path": "languages/lineweb-change-desk-el_GR.mo",
+      "sha256": "4b1a5ed60afa463a8e435a6e29d81f6aea37ed3bfaba2aef5893a3e7d592ca1f"
+    },
+    {
+      "path": "languages/lineweb-change-desk-el_GR.po",
+      "sha256": "7c15d5afa25ad176427e43a2881a1cfda0aa8bf0df81ac066ab14ccf26eaf2a3"
+    },
+    {
+      "path": "languages/lineweb-change-desk.pot",
+      "sha256": "6cccdf6a848b675498c97b96639ae39948ba10b94e57a2ed58e711a170f11e84"
+    },
+    {
+      "path": "lineweb-change-desk.php",
+      "sha256": "7bdbacca6c7ad27939ad60be927cacddde6393209379d382175586d212eb9a8b"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "2cff3fa182fd536e6a7b175d50b845df7c93c72e27bc40b84bddc7b5b8c97509"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cf173e644f2a5339d83316d865c35ee0785708cfe00e7a8fbf223accbd3f1159"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "78effbe82d21932ef7300f7e484c9c787d9cd96e4a21a416ef1a86a917ce7e39"
+    },
+    {
+      "path": "readme.txt",
+      "sha256": "139307f195551535e478468765b6a456d4eff2159980241e58f67d3e00c8cbbb"
+    },
+    {
+      "path": "specs/change-desk.spec.ts",
+      "sha256": "df0a8e054d31f41d9008780ec483511150610f7be8b53eb85b59ef38d1206933"
+    },
+    {
+      "path": "specs/screenshots.spec.ts",
+      "sha256": "82c28b97be446accc7a256ca1d8bdafa30ff910742ef637e75d9427b78206096"
+    },
+    {
+      "path": "src/admin/index.js",
+      "sha256": "215c5cbd245aee177229c4bf74d503e83e29a12df4b68095d7189b5fee779f61"
+    },
+    {
+      "path": "src/admin/style.scss",
+      "sha256": "8b01bae4c5e512c66c98eb731c1512769abc8986acc6d1542cc310ea67737c69"
+    },
+    {
+      "path": "tests/analysis-smoke.php",
+      "sha256": "2e387f6ed140b0efc72f7be2bb4a63575dab1e0279ab1510110d16fb7d482a5f"
+    },
+    {
+      "path": "tests/concurrency-smoke.php",
+      "sha256": "54d435399e032fe5bf168d24c281bdf6d673b15c832b91c3467ad22822f47bf1"
+    },
+    {
+      "path": "tests/content-smoke.php",
+      "sha256": "597b0edc7d7eff096b453e85d58462de6a57eb3aac50b7a9e75d8f202d49cce5"
+    },
+    {
+      "path": "tests/helpers.php",
+      "sha256": "67f2a9388b9395623477d0a45cbd698564454ad49a99627208f2f9196a21dcad"
+    },
+    {
+      "path": "tests/jobs-smoke.php",
+      "sha256": "92cea85329c93fde1acf0b1a89661eec41e347e3ec0782d3516a846e1e58798d"
+    },
+    {
+      "path": "tests/native-provider-fixture.php",
+      "sha256": "eff1b80570913453d50505d59a6f4659058156cf5d61afe479709d77a6c3e8d8"
+    },
+    {
+      "path": "tests/package-tests.mjs",
+      "sha256": "400e83b6ebb6abd18fe4878e5178dbb1502db4f78e2cee3aefa4bb6e8ab38fb3"
+    },
+    {
+      "path": "tests/provider-smoke.php",
+      "sha256": "4e9a1c93292ed3aac68cda94347b0b4a7a455d6d7bac9973b156777003b0d24c"
+    },
+    {
+      "path": "tests/provider-tests.php",
+      "sha256": "d4210f99839e5b51a8f1506525d6a6626bd94dbc9586df5986150ad2e922e22f"
+    },
+    {
+      "path": "tests/quota-worker.php",
+      "sha256": "ff1d43c02d41841d781135fe6091fa8525158563e2d556db6da236a6b7a2e495"
+    },
+    {
+      "path": "tests/rest-smoke.php",
+      "sha256": "a4a9884ac2e0b821278547a3c94897516955d7401798fa27e834f3a54f639102"
+    },
+    {
+      "path": "tests/review-smoke.php",
+      "sha256": "99f8365b171aa2eaad8f98edb20c32e3a95ff3972687403d1460c47548a926fc"
+    },
+    {
+      "path": "tests/run.php",
+      "sha256": "3cdea35cfff6a30723fe5903ebc20cb566f7718bfb5ecc4e8253e15956761165"
+    },
+    {
+      "path": "tests/runtime-helpers.php",
+      "sha256": "3c851295320c838b63d4945df97d2c967fd089cabc2773b10d02d8890d337b60"
+    },
+    {
+      "path": "tests/uninstall-smoke.php",
+      "sha256": "0f7c70614159f3eb40024f15b51110c63c04dfa90bc9e9ad84147091abad0420"
+    },
+    {
+      "path": "tests/wp-error.php",
+      "sha256": "8cd77cf4d159dfa3f1504065fd0bae5f176cc1822c9dd6f581f01ee5041393ac"
+    },
+    {
+      "path": "tests/wp-functions.php",
+      "sha256": "821e3e67a7bb9a5a2651ccc89326ffda164e55575fb91e3e7d39c023dd8101b5"
+    },
+    {
+      "path": "tests/write-smoke.php",
+      "sha256": "4a39c0cf71db42eef00e5d0096cac4dea5178408fdd140e6cc553e7f22e0bfd8"
+    },
+    {
+      "path": "tools/check-package.mjs",
+      "sha256": "88b329b0ecb6fae9cd47e60faaa6f62fd749d5c39b7f24044b520509d1110aba"
+    },
+    {
+      "path": "tools/check-plugin-report.mjs",
+      "sha256": "31f1d99b22b18de73a98d0cfb0ba59926ff4e4ca82fa640c894e108040fcd918"
+    },
+    {
+      "path": "tools/make-upgrade-fixture.mjs",
+      "sha256": "335ca8ab85a06bacafa572327c8349f663529a6de9746a388f99a3a824e519cf"
+    },
+    {
+      "path": "tools/runtime-allowlist.mjs",
+      "sha256": "25f533a68778a146bee2456e8858d49ad8406831876203ca5962f4e0f325157e"
+    },
+    {
+      "path": "tools/seed-demo.php",
+      "sha256": "2a9cfd601e6469fbd63e685df5805abb52c04e87ed2870d3f5b7f4c94ff62e27"
+    },
+    {
+      "path": "tools/write-ci-wp-env.mjs",
+      "sha256": "3157fc229ce5c596cd859e80ec6b81c5fa0bf4b23f5de3c35ee95556a2bc8006"
+    },
+    {
+      "path": "uninstall.php",
+      "sha256": "a8e2187db1903f4543539d2d6454270e625e279392b45f53053220544a4f29ef"
+    },
+    {
+      "path": "webpack.config.js",
+      "sha256": "8b48c97fd96d56a01987be22c1d46adc832b1e38e7c00747aee4de17a14675ef"
+    },
+    {
+      "path": "wordpress-org-assets/banner-1544x500.png",
+      "sha256": "63dca2debe3ac454ccf8d04334063cbc3dfc74529fd009629a820bcae49bede9"
+    },
+    {
+      "path": "wordpress-org-assets/banner-772x250.png",
+      "sha256": "8c28f8f42699326332cbb4e11843a2bd6efb277817cea60fb5aaf563e36966ef"
+    },
+    {
+      "path": "wordpress-org-assets/icon-128x128.png",
+      "sha256": "df80cb295739dce796d33f12cc6d36922cd6625b68ee30e5e0cb7dc25fc25aa5"
+    },
+    {
+      "path": "wordpress-org-assets/icon-256x256.png",
+      "sha256": "4de7c26974d33f8b93f1e1bc6bd43d32605cd425e7d5334888cfed0ede7562e9"
+    },
+    {
+      "path": "wordpress-org-assets/screenshot-1.png",
+      "sha256": "88a1faf03335e8a0ff6452bc2a6c6b39e60ee1c30922369d5c7c346d0c418467"
+    },
+    {
+      "path": "wordpress-org-assets/screenshot-2.png",
+      "sha256": "fdd34947ca9a963763c1afd1504978bbbae0425ceaa79ce87d734bfc469d1c2a"
+    },
+    {
+      "path": "wordpress-org-assets/screenshot-3.png",
+      "sha256": "c0dbe96a5209d04139b743755ac35c5f7b8ddbd7c2ba98c614a34d9f10e4d3e4"
+    }
+  ]
+}

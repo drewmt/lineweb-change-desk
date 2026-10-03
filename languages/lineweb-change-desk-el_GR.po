@@ -1,0 +1,562 @@
+# Greek translation maintained by Lineweb <info@lineweb.gr>.
+msgid ""
+msgstr ""
+"Project-Id-Version: Lineweb Change Desk 0.1.0\n"
+"Report-Msgid-Bugs-To: info@lineweb.gr\n"
+"POT-Creation-Date: 2026-10-03 00:00+0000\n"
+"PO-Revision-Date: 2026-10-03 00:00+0000\n"
+"Last-Translator: Lineweb <info@lineweb.gr>\n"
+"Language-Team: Greek\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lineweb reviewed localization map\n"
+
+#: includes/admin.php:7
+msgid "Lineweb Change Desk"
+msgstr "Lineweb Change Desk"
+
+#: includes/admin.php:7
+msgid "Change Desk"
+msgstr "Change Desk"
+
+#: includes/admin.php:36
+msgid "You cannot access this page."
+msgstr "Δεν έχετε πρόσβαση σε αυτή τη σελίδα."
+
+#: includes/admin.php:42
+msgid "Keep business information consistent."
+msgstr "Οι πληροφορίες σας, παντού σωστές."
+
+#: includes/admin.php:43
+msgid ""
+"New opening hours, a changed policy, an updated service. Find the old "
+"references, review each proposal and change only what you approve."
+msgstr ""
+"Νέο ωράριο, αλλαγή πολιτικής, ενημερωμένη υπηρεσία. Βρείτε τις παλιές "
+"αναφορές, ελέγξτε κάθε πρόταση και αλλάξτε μόνο όσα εγκρίνετε."
+
+#: includes/admin.php:44
+msgid "Start a reviewed change"
+msgstr "Ξεκινήστε μια αλλαγή"
+
+#: includes/admin.php:44
+msgid "View history"
+msgstr "Προβολή ιστορικού"
+
+#: includes/admin.php:46
+msgid "Lineweb branding"
+msgstr "Ταυτότητα Lineweb"
+
+#: includes/admin.php:46
+msgid "You review. You decide."
+msgstr "Εσείς ελέγχετε. Εσείς αποφασίζετε."
+
+#: includes/admin.php:46
+msgid "Version 0.1 · No autonomous publishing"
+msgstr "Έκδοση 0.1 · Χωρίς αυτόνομη δημοσίευση"
+
+#: includes/admin.php:48
+msgid "Loading your workspace…"
+msgstr "Φόρτωση χώρου εργασίας…"
+
+#: includes/admin.php:49
+msgid "A free, independent WordPress tool."
+msgstr "Ένα δωρεάν, αυτόνομο εργαλείο WordPress."
+
+#: includes/admin.php:49
+msgid ""
+"No Lineweb account or telemetry. AI sends selected text to your configured "
+"provider only after confirmation; provider charges may apply."
+msgstr ""
+"Χωρίς λογαριασμό Lineweb ή τηλεμετρία. Το AI στέλνει μόνο το επιλεγμένο "
+"κείμενο στον πάροχό σας μετά την επιβεβαίωση. Ενδέχεται να ισχύουν χρεώσεις "
+"παρόχου."
+
+#: includes/admin.php:49
+msgid "Support"
+msgstr "Υποστήριξη"
+
+#: includes/db.php:58
+msgid ""
+"Transactional storage could not be verified. Refresh job status and inspect "
+"the source before repeating any write."
+msgstr ""
+"Δεν επιβεβαιώθηκε η αποθήκευση μέσω συναλλαγής. Ανανεώστε την κατάσταση και "
+"ελέγξτε το αρχικό περιεχόμενο πριν επαναλάβετε οποιαδήποτε αλλαγή."
+
+#: includes/jobs.php:55 includes/rest.php:98 includes/rest.php:255
+msgid "A source changed. Preview again."
+msgstr "Το αρχικό περιεχόμενο άλλαξε. Κάντε νέα προεπισκόπηση."
+
+#: includes/jobs.php:136
+msgid "This job has expired."
+msgstr "Αυτή η εργασία έχει λήξει."
+
+#: includes/jobs.php:212
+msgid "You cannot access this job or its source content."
+msgstr "Δεν έχετε πρόσβαση σε αυτή την εργασία ή στο περιεχόμενό της."
+
+#: includes/proposals.php:24
+msgid "Exact text match. No AI request."
+msgstr "Ακριβής αντιστοίχιση κειμένου. Χωρίς κλήση AI."
+
+#: includes/proposals.php:60
+msgid "The proposal does not match a safe source field."
+msgstr "Η πρόταση δεν αντιστοιχεί σε ασφαλές πεδίο του αρχικού περιεχομένου."
+
+#: includes/provider.php:36
+msgid ""
+"AI is unavailable. Configure a compatible provider in WordPress Settings > "
+"Connectors. Exact text changes work without AI."
+msgstr ""
+"Το AI δεν είναι διαθέσιμο. Ρυθμίστε συμβατό πάροχο στις Ρυθμίσεις > "
+"Συνδέσεις του WordPress. Οι ακριβείς αλλαγές κειμένου λειτουργούν χωρίς AI."
+
+#: includes/provider.php:47
+#. translators: %s: selected WordPress AI provider identifier.
+#, php-format
+msgid "Selected WordPress provider: %s. AI usage may be charged by your provider."
+msgstr ""
+"Επιλεγμένος πάροχος WordPress: %s. Η χρήση AI ενδέχεται να χρεώνεται από "
+"τον πάροχό σας."
+
+#: includes/provider.php:120
+msgid "The configured provider changed. Start a new preview."
+msgstr "Ο ρυθμισμένος πάροχος άλλαξε. Ξεκινήστε νέα προεπισκόπηση."
+
+#: includes/provider.php:131 includes/quota.php:30
+msgid "Daily AI request limit reached."
+msgstr "Συμπληρώθηκε το ημερήσιο όριο κλήσεων AI."
+
+#: includes/provider.php:168
+msgid "The AI result is incomplete or does not match the selected source fields."
+msgstr "Το αποτέλεσμα AI είναι ελλιπές ή δεν αντιστοιχεί στα επιλεγμένα πεδία."
+
+#: includes/rest.php:36
+msgid "Your session expired. Refresh the page before continuing."
+msgstr "Η συνεδρία σας έληξε. Ανανεώστε τη σελίδα πριν συνεχίσετε."
+
+#: includes/rest.php:156
+msgid ""
+"Analysis was interrupted. The provider request may have been charged. This "
+"job will not repeat it. Review existing proposals or start a new preview "
+"manually."
+msgstr ""
+"Η ανάλυση διακόπηκε. Η κλήση παρόχου ενδέχεται να χρεώθηκε και δεν θα "
+"επαναληφθεί από αυτή την εργασία. Ελέγξτε τις υπάρχουσες προτάσεις ή "
+"ξεκινήστε χειροκίνητα νέα προεπισκόπηση."
+
+#: includes/rest.php:251
+msgid "Analysis is complete, cancelled or already in progress. Refresh job status."
+msgstr ""
+"Η ανάλυση ολοκληρώθηκε, ακυρώθηκε ή βρίσκεται ήδη σε εξέλιξη. Ανανεώστε την "
+"κατάσταση."
+
+#: includes/rest.php:260
+msgid "The configured provider changed or is unavailable. Start a new preview."
+msgstr ""
+"Ο ρυθμισμένος πάροχος άλλαξε ή δεν είναι διαθέσιμος. Ξεκινήστε νέα "
+"προεπισκόπηση."
+
+#: includes/rest.php:274
+msgid "Analysis needs verification and will not be repeated."
+msgstr "Η ανάλυση χρειάζεται επιβεβαίωση και δεν θα επαναληφθεί."
+
+#: includes/rest.php:332
+msgid "Check the selected sources and input limits."
+msgstr "Ελέγξτε το επιλεγμένο περιεχόμενο και τα όρια εισαγωγής."
+
+#: includes/scope.php:13
+msgid "Select between one and ten unique posts or pages."
+msgstr "Επιλέξτε ένα έως δέκα διαφορετικά άρθρα ή σελίδες."
+
+#: includes/scope.php:24
+msgid "Invalid source ID."
+msgstr "Μη έγκυρο αναγνωριστικό περιεχομένου."
+
+#: includes/scope.php:28
+msgid "You cannot edit one of the selected sources."
+msgstr "Δεν μπορείτε να επεξεργαστείτε ένα από τα επιλεγμένα στοιχεία."
+
+#: includes/scope.php:31
+msgid "This source is too large for safe analysis."
+msgstr "Αυτό το περιεχόμενο είναι πολύ μεγάλο για ασφαλή ανάλυση."
+
+#: includes/scope.php:38
+msgid "Selected text exceeds the analysis limit. Select fewer sources."
+msgstr "Το επιλεγμένο κείμενο ξεπερνά το όριο ανάλυσης. Επιλέξτε λιγότερα στοιχεία."
+
+#: includes/text-fields.php:20
+msgid "Block markup cannot be safely round-tripped."
+msgstr "Η δομή των blocks δεν μπορεί να διατηρηθεί με ασφάλεια."
+
+#: includes/text-fields.php:57
+msgid "Manual review: unsupported block or markup."
+msgstr "Χειροκίνητος έλεγχος: μη υποστηριζόμενο block ή δομή."
+
+#: includes/writer.php:63
+msgid "Job operation limit reached. Start a new preview."
+msgstr "Συμπληρώθηκε το όριο ενεργειών της εργασίας. Ξεκινήστε νέα προεπισκόπηση."
+
+#: includes/writer.php:164
+msgid "Invalid selection or operation ID."
+msgstr "Μη έγκυρη επιλογή ή αναγνωριστικό ενέργειας."
+
+#: src/admin/index.js:11
+msgid "Applied"
+msgstr "Εφαρμόστηκε"
+
+#: src/admin/index.js:12
+msgid "Restored"
+msgstr "Επαναφέρθηκε"
+
+#: src/admin/index.js:13
+msgid "Conflict: source changed or locked"
+msgstr "Σύγκρουση: το περιεχόμενο άλλαξε ή είναι κλειδωμένο"
+
+#: src/admin/index.js:14
+msgid "Not applied"
+msgstr "Δεν εφαρμόστηκε"
+
+#: src/admin/index.js:15
+msgid "Needs verification. Do not repeat the write."
+msgstr "Χρειάζεται επιβεβαίωση. Μην επαναλάβετε την αλλαγή."
+
+#: src/admin/index.js:70
+msgid "The request could not be verified. Refresh job status before trying again."
+msgstr "Το αίτημα δεν επιβεβαιώθηκε. Ανανεώστε την κατάσταση πριν δοκιμάσετε ξανά."
+
+#: src/admin/index.js:227
+msgid "Workflow safeguards"
+msgstr "Δικλίδες ασφαλείας"
+
+#: src/admin/index.js:233
+msgid "Selected posts and pages only"
+msgstr "Μόνο επιλεγμένα άρθρα και σελίδες"
+
+#: src/admin/index.js:239
+msgid "Nothing changes without your approval"
+msgstr "Τίποτα δεν αλλάζει χωρίς την έγκρισή σας"
+
+#: src/admin/index.js:245
+msgid "Private history for 30 days"
+msgstr "Ιδιωτικό ιστορικό για 30 ημέρες"
+
+#: src/admin/index.js:265
+msgid "What changed?"
+msgstr "Τι άλλαξε;"
+
+#: src/admin/index.js:268
+msgid ""
+"Use an exact change without AI, or describe a factual update for AI "
+"proposals."
+msgstr ""
+"Κάντε μια ακριβή αλλαγή χωρίς AI ή περιγράψτε μια πραγματική ενημέρωση για "
+"προτάσεις AI."
+
+#: src/admin/index.js:277
+msgid "Change mode"
+msgstr "Τρόπος αλλαγής"
+
+#: src/admin/index.js:290
+msgid "Exact text change (no AI)"
+msgstr "Ακριβής αλλαγή κειμένου (χωρίς AI)"
+
+#: src/admin/index.js:307 src/admin/index.js:972
+msgid "AI proposals"
+msgstr "Προτάσεις AI"
+
+#: src/admin/index.js:314
+msgid "Connector settings"
+msgstr "Ρυθμίσεις συνδέσεων"
+
+#: src/admin/index.js:324
+msgid "Old text"
+msgstr "Παλιό κείμενο"
+
+#: src/admin/index.js:338
+msgid "New text"
+msgstr "Νέο κείμενο"
+
+#: src/admin/index.js:354
+msgid "Describe the factual change"
+msgstr "Περιγράψτε την πραγματική αλλαγή"
+
+#: src/admin/index.js:372
+msgid "%d / 2,000 characters"
+msgstr "%d / 2.000 χαρακτήρες"
+
+#: src/admin/index.js:385
+msgid "Choose the content"
+msgstr "Επιλέξτε το περιεχόμενο"
+
+#: src/admin/index.js:391
+msgid ""
+"Select up to ten published posts or pages you can edit. Products, builders "
+"and templates are outside this version."
+msgstr ""
+"Επιλέξτε έως δέκα δημοσιευμένα άρθρα ή σελίδες που μπορείτε να "
+"επεξεργαστείτε. Προϊόντα, page builders και πρότυπα δεν υποστηρίζονται σε "
+"αυτή την έκδοση."
+
+#: src/admin/index.js:406
+msgid "Search content"
+msgstr "Αναζήτηση περιεχομένου"
+
+#: src/admin/index.js:416
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: src/admin/index.js:430
+msgid "Select %s"
+msgstr "Επιλογή %s"
+
+#: src/admin/index.js:454
+msgid "Untitled"
+msgstr "Χωρίς τίτλο"
+
+#: src/admin/index.js:461
+msgid "Page"
+msgstr "Σελίδα"
+
+#: src/admin/index.js:462
+msgid "Post"
+msgstr "Άρθρο"
+
+#: src/admin/index.js:469
+msgid "No editable published content matched this search."
+msgstr "Δεν βρέθηκε επεξεργάσιμο δημοσιευμένο περιεχόμενο."
+
+#: src/admin/index.js:483
+msgid "Previous"
+msgstr "Προηγούμενη"
+
+#: src/admin/index.js:488
+msgid "%1$d selected · page %2$d"
+msgstr "%1$d επιλεγμένα · σελίδα %2$d"
+
+#: src/admin/index.js:502
+msgid "Next"
+msgstr "Επόμενη"
+
+#: src/admin/index.js:529
+msgid "Working…"
+msgstr "Σε εξέλιξη…"
+
+#: src/admin/index.js:530
+msgid "Preview selected content"
+msgstr "Προεπισκόπηση επιλεγμένου περιεχομένου"
+
+#: src/admin/index.js:542
+msgid "Check the selected excerpts"
+msgstr "Ελέγξτε τα επιλεγμένα αποσπάσματα"
+
+#: src/admin/index.js:548
+msgid ""
+"These plain-text fields are the entire analysis scope. Phrases split across "
+"inline formatting need manual review."
+msgstr ""
+"Αυτά τα πεδία απλού κειμένου αποτελούν το πλήρες πεδίο της ανάλυσης. "
+"Φράσεις που χωρίζονται από μορφοποίηση χρειάζονται χειροκίνητο έλεγχο."
+
+#: src/admin/index.js:559
+msgid "text fields"
+msgstr "πεδία κειμένου"
+
+#: src/admin/index.js:570
+msgid "%d unsupported areas require manual review."
+msgstr "%d μη υποστηριζόμενες περιοχές χρειάζονται χειροκίνητο έλεγχο."
+
+#: src/admin/index.js:592
+msgid ""
+"Send only these excerpts and my instruction to %s. Provider charges and "
+"retention terms may apply."
+msgstr ""
+"Αποστολή μόνο αυτών των αποσπασμάτων και της οδηγίας μου στον πάροχο %s. "
+"Ενδέχεται να ισχύουν χρεώσεις και όροι διατήρησης δεδομένων."
+
+#: src/admin/index.js:606
+msgid "Prepare exact proposals"
+msgstr "Προετοιμασία ακριβών προτάσεων"
+
+#: src/admin/index.js:610
+msgid "Create reviewed AI job"
+msgstr "Δημιουργία εργασίας AI για έλεγχο"
+
+#: src/admin/index.js:623
+msgid "Review each proposed change"
+msgstr "Ελέγξτε κάθε προτεινόμενη αλλαγή"
+
+#: src/admin/index.js:629
+msgid ""
+"No proposals are selected automatically. Check facts and context before "
+"applying."
+msgstr ""
+"Καμία πρόταση δεν επιλέγεται αυτόματα. Ελέγξτε τις πληροφορίες και το νόημα "
+"πριν την εφαρμογή."
+
+#: src/admin/index.js:640
+msgid "%d supported fields"
+msgstr "%d υποστηριζόμενα πεδία"
+
+#: src/admin/index.js:650
+msgid "%d analyzed"
+msgstr "%d αναλύθηκαν"
+
+#: src/admin/index.js:657
+msgid "%d failed"
+msgstr "%d απέτυχαν"
+
+#: src/admin/index.js:664
+msgid "%d unscanned"
+msgstr "%d δεν ελέγχθηκαν"
+
+#: src/admin/index.js:671
+msgid "%d manual areas"
+msgstr "%d περιοχές χειροκίνητου ελέγχου"
+
+#: src/admin/index.js:681
+msgid "Provider: %1$s · %2$d requests reserved · job status: %3$s"
+msgstr "Πάροχος: %1$s · %2$d δεσμευμένες κλήσεις · κατάσταση: %3$s"
+
+#: src/admin/index.js:698
+msgid "Start or continue confirmed AI analysis"
+msgstr "Έναρξη ή συνέχεια επιβεβαιωμένης ανάλυσης AI"
+
+#: src/admin/index.js:720
+msgid "Cancel further analysis"
+msgstr "Ακύρωση επόμενων αναλύσεων"
+
+#: src/admin/index.js:730
+msgid ""
+"No applicable proposals. This is not a complete-site scan. Check "
+"unsupported areas, split phrases and the analysis status."
+msgstr ""
+"Δεν υπάρχουν εφαρμόσιμες προτάσεις. Δεν πρόκειται για πλήρη έλεγχο του "
+"site. Ελέγξτε τις μη υποστηριζόμενες περιοχές, τις χωρισμένες φράσεις και "
+"την κατάσταση ανάλυσης."
+
+#: src/admin/index.js:746
+msgid "Approve change %d"
+msgstr "Έγκριση αλλαγής %d"
+
+#: src/admin/index.js:777
+msgid "Before"
+msgstr "Πριν"
+
+#: src/admin/index.js:786
+msgid "Proposed"
+msgstr "Πρόταση"
+
+#: src/admin/index.js:793
+msgid "(Remove this text)"
+msgstr "(Αφαίρεση αυτού του κειμένου)"
+
+#: src/admin/index.js:814
+msgid "Review selected changes"
+msgstr "Έλεγχος επιλεγμένων αλλαγών"
+
+#: src/admin/index.js:823
+msgid "Refresh job status"
+msgstr "Ανανέωση κατάστασης εργασίας"
+
+#: src/admin/index.js:832
+msgid "Final review"
+msgstr "Τελικός έλεγχος"
+
+#: src/admin/index.js:837
+msgid ""
+"Apply %d selected text changes. Source content and permissions will be "
+"checked again. Third-party emails or webhooks cannot be undone by restoring "
+"text."
+msgstr ""
+"Εφαρμογή %d επιλεγμένων αλλαγών κειμένου. Το περιεχόμενο και τα δικαιώματα "
+"θα ελεγχθούν ξανά. Email ή webhooks τρίτων δεν αναιρούνται με την επαναφορά "
+"κειμένου."
+
+#: src/admin/index.js:850
+msgid "Apply approved changes"
+msgstr "Εφαρμογή εγκεκριμένων αλλαγών"
+
+#: src/admin/index.js:859
+msgid "Back to review"
+msgstr "Επιστροφή στον έλεγχο"
+
+#: src/admin/index.js:888
+msgid "Restore"
+msgstr "Επαναφορά"
+
+#: src/admin/index.js:889
+msgid "Apply"
+msgstr "Εφαρμογή"
+
+# translators: %d: WordPress user ID.
+#: src/admin/index.js:893
+msgid "User %d"
+msgstr "Χρήστης %d"
+
+#: src/admin/index.js:914
+msgid ""
+"Restore is available only while the saved after-version is still current. "
+"Newer human edits are never force-overwritten."
+msgstr ""
+"Η επαναφορά είναι διαθέσιμη μόνο όσο η αποθηκευμένη έκδοση παραμένει η "
+"τρέχουσα. Νεότερες ανθρώπινες αλλαγές δεν αντικαθίστανται υποχρεωτικά."
+
+#: src/admin/index.js:923
+msgid "Restore original content"
+msgstr "Επαναφορά αρχικού περιεχομένου"
+
+#: src/admin/index.js:933
+msgid ""
+"Private job expires: %s. Deleting a source removes this entire job and its "
+"restore history."
+msgstr ""
+"Λήξη ιδιωτικής εργασίας: %s. Η διαγραφή αρχικού περιεχομένου αφαιρεί "
+"ολόκληρη την εργασία και το ιστορικό επαναφοράς της."
+
+#: src/admin/index.js:944
+msgid "Your recent change history"
+msgstr "Πρόσφατο ιστορικό αλλαγών"
+
+#: src/admin/index.js:950
+msgid ""
+"Only jobs whose source content you can still edit are shown. Excerpts and "
+"restore snapshots expire after 30 days."
+msgstr ""
+"Εμφανίζονται μόνο εργασίες των οποίων το περιεχόμενο μπορείτε ακόμη να "
+"επεξεργαστείτε. Αποσπάσματα και αντίγραφα επαναφοράς λήγουν μετά από 30 "
+"ημέρες."
+
+#: src/admin/index.js:957
+msgid "No reviewed changes yet. Start with a small, real update."
+msgstr ""
+"Δεν υπάρχουν ακόμη ελεγμένες αλλαγές. Ξεκινήστε με μια μικρή, πραγματική "
+"ενημέρωση."
+
+#: src/admin/index.js:968
+msgid "Exact change"
+msgstr "Ακριβής αλλαγή"
+
+#: src/admin/index.js:979
+msgid "sources"
+msgstr "πηγές"
+
+#: src/admin/index.js:989
+msgid "Open job"
+msgstr "Άνοιγμα εργασίας"
+
+#: src/admin/index.js:1007
+msgid "Delete private history"
+msgstr "Διαγραφή ιδιωτικού ιστορικού"
+
+#: src/admin/index.js:1022
+msgid "Previous history"
+msgstr "Προηγούμενο ιστορικό"
+
+#: src/admin/index.js:1030
+msgid "Next history"
+msgstr "Επόμενο ιστορικό"

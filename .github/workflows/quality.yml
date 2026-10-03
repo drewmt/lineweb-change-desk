@@ -1,0 +1,102 @@
+name: Quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - uses: shivammathur/setup-php@v2
+        with: {php-version: '8.3', coverage: none}
+      - run: sudo apt-get update && sudo apt-get install -y gettext
+      - run: npm ci --legacy-peer-deps --no-audit --no-fund
+      - run: npm audit --omit=dev --audit-level=high
+      - run: npm audit --audit-level=critical
+      - run: npm run lint:js && npm run lint:css && npm run lint:php
+      - run: npm run test:unit && npm run build
+      - run: git diff --exit-code -- build
+      - run: for file in languages/*-el.po languages/*-el_GR.po; do msgfmt --check -o /dev/null "$file"; test -z "$(msgattrib --untranslated "$file" | grep '^msgid ')"; done
+  compatibility:
+    needs: static
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {wordpress: '7.0', php: '8.3'}
+          - {wordpress: latest, php: '8.3'}
+          - {wordpress: latest, php: '8.4'}
+          - {wordpress: latest, php: '8.5'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --legacy-peer-deps --no-audit --no-fund
+      - run: npm run build
+      - run: node tools/write-ci-wp-env.mjs
+        env:
+          WP_VERSION: ${{ matrix.wordpress }}
+          PHP_VERSION: ${{ matrix.php }}
+      - run: npm run env:start && npm run env:activate
+      - run: for test in content provider jobs write rest analysis concurrency review; do npx wp-env run cli wp eval-file /var/www/html/wp-content/plugins/lineweb-change-desk/tests/$test-smoke.php || exit 1; done
+      - if: always()
+        run: npm run env:stop
+  e2e:
+    needs: static
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        theme: [twentytwentyone, twentytwentyfive]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --legacy-peer-deps --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build && node tools/write-ci-wp-env.mjs
+      - run: npm run env:start && npm run env:activate
+      - run: npx wp-env run cli wp theme install ${{ matrix.theme }} --activate
+      - run: npx wp-env run cli wp language core install el ar
+      - run: npm run test:e2e
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: change-desk-${{ matrix.theme }}
+          path: artifacts-change-desk/**
+      - if: always()
+        run: npm run env:stop
+  release-zip:
+    needs: static
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --legacy-peer-deps --no-audit --no-fund
+      - run: npm run build && npm run plugin-zip
+      - run: node tools/make-upgrade-fixture.mjs
+      - run: node tools/write-ci-wp-env.mjs
+        env: {WP_ENV_MODE: archive}
+      - run: npm run env:start
+      - run: npx wp-env run cli wp plugin install /var/www/html/wp-content/lineweb-ci/lineweb-change-desk-0.0.0.zip --activate
+      - run: npx wp-env run cli wp plugin install /var/www/html/wp-content/lineweb-ci/lineweb-change-desk.zip --force
+      - run: npx wp-env run cli wp plugin deactivate lineweb-change-desk
+      - run: npx wp-env run cli wp plugin activate lineweb-change-desk
+      - run: for test in content provider jobs write rest analysis review; do npx wp-env run cli wp eval-file /var/www/html/wp-content/lineweb-tests/$test-smoke.php || exit 1; done
+      - run: npx wp-env run cli wp plugin install plugin-check --activate
+      - run: npx wp-env run cli wp plugin check lineweb-change-desk --format=strict-json > plugin-check-report.json
+      - run: node tools/check-plugin-report.mjs plugin-check-report.json
+      - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/lineweb-tests/uninstall-smoke.php
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lineweb-change-desk-candidate
+          path: lineweb-change-desk.zip
+      - if: always()
+        run: npm run env:stop

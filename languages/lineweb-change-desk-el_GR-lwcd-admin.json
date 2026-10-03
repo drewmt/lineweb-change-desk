@@ -1,0 +1,245 @@
+{
+  "translation-revision-date": "2026-10-03 00:00+0000",
+  "generator": "Lineweb reviewed localization map",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "plural-forms": "nplurals=2; plural=(n != 1);",
+        "lang": "el_GR"
+      },
+      "Applied": [
+        "Εφαρμόστηκε"
+      ],
+      "Restored": [
+        "Επαναφέρθηκε"
+      ],
+      "Conflict: source changed or locked": [
+        "Σύγκρουση: το περιεχόμενο άλλαξε ή είναι κλειδωμένο"
+      ],
+      "Not applied": [
+        "Δεν εφαρμόστηκε"
+      ],
+      "Needs verification. Do not repeat the write.": [
+        "Χρειάζεται επιβεβαίωση. Μην επαναλάβετε την αλλαγή."
+      ],
+      "The request could not be verified. Refresh job status before trying again.": [
+        "Το αίτημα δεν επιβεβαιώθηκε. Ανανεώστε την κατάσταση πριν δοκιμάσετε ξανά."
+      ],
+      "Workflow safeguards": [
+        "Δικλίδες ασφαλείας"
+      ],
+      "Selected posts and pages only": [
+        "Μόνο επιλεγμένα άρθρα και σελίδες"
+      ],
+      "Nothing changes without your approval": [
+        "Τίποτα δεν αλλάζει χωρίς την έγκρισή σας"
+      ],
+      "Private history for 30 days": [
+        "Ιδιωτικό ιστορικό για 30 ημέρες"
+      ],
+      "What changed?": [
+        "Τι άλλαξε;"
+      ],
+      "Use an exact change without AI, or describe a factual update for AI proposals.": [
+        "Κάντε μια ακριβή αλλαγή χωρίς AI ή περιγράψτε μια πραγματική ενημέρωση για προτάσεις AI."
+      ],
+      "Change mode": [
+        "Τρόπος αλλαγής"
+      ],
+      "Exact text change (no AI)": [
+        "Ακριβής αλλαγή κειμένου (χωρίς AI)"
+      ],
+      "AI proposals": [
+        "Προτάσεις AI"
+      ],
+      "Connector settings": [
+        "Ρυθμίσεις συνδέσεων"
+      ],
+      "Old text": [
+        "Παλιό κείμενο"
+      ],
+      "New text": [
+        "Νέο κείμενο"
+      ],
+      "Describe the factual change": [
+        "Περιγράψτε την πραγματική αλλαγή"
+      ],
+      "%d / 2,000 characters": [
+        "%d / 2.000 χαρακτήρες"
+      ],
+      "Choose the content": [
+        "Επιλέξτε το περιεχόμενο"
+      ],
+      "Select up to ten published posts or pages you can edit. Products, builders and templates are outside this version.": [
+        "Επιλέξτε έως δέκα δημοσιευμένα άρθρα ή σελίδες που μπορείτε να επεξεργαστείτε. Προϊόντα, page builders και πρότυπα δεν υποστηρίζονται σε αυτή την έκδοση."
+      ],
+      "Search content": [
+        "Αναζήτηση περιεχομένου"
+      ],
+      "Search": [
+        "Αναζήτηση"
+      ],
+      "Select %s": [
+        "Επιλογή %s"
+      ],
+      "Untitled": [
+        "Χωρίς τίτλο"
+      ],
+      "Page": [
+        "Σελίδα"
+      ],
+      "Post": [
+        "Άρθρο"
+      ],
+      "No editable published content matched this search.": [
+        "Δεν βρέθηκε επεξεργάσιμο δημοσιευμένο περιεχόμενο."
+      ],
+      "Previous": [
+        "Προηγούμενη"
+      ],
+      "%1$d selected · page %2$d": [
+        "%1$d επιλεγμένα · σελίδα %2$d"
+      ],
+      "Next": [
+        "Επόμενη"
+      ],
+      "Working…": [
+        "Σε εξέλιξη…"
+      ],
+      "Preview selected content": [
+        "Προεπισκόπηση επιλεγμένου περιεχομένου"
+      ],
+      "Check the selected excerpts": [
+        "Ελέγξτε τα επιλεγμένα αποσπάσματα"
+      ],
+      "These plain-text fields are the entire analysis scope. Phrases split across inline formatting need manual review.": [
+        "Αυτά τα πεδία απλού κειμένου αποτελούν το πλήρες πεδίο της ανάλυσης. Φράσεις που χωρίζονται από μορφοποίηση χρειάζονται χειροκίνητο έλεγχο."
+      ],
+      "text fields": [
+        "πεδία κειμένου"
+      ],
+      "%d unsupported areas require manual review.": [
+        "%d μη υποστηριζόμενες περιοχές χρειάζονται χειροκίνητο έλεγχο."
+      ],
+      "Send only these excerpts and my instruction to %s. Provider charges and retention terms may apply.": [
+        "Αποστολή μόνο αυτών των αποσπασμάτων και της οδηγίας μου στον πάροχο %s. Ενδέχεται να ισχύουν χρεώσεις και όροι διατήρησης δεδομένων."
+      ],
+      "Prepare exact proposals": [
+        "Προετοιμασία ακριβών προτάσεων"
+      ],
+      "Create reviewed AI job": [
+        "Δημιουργία εργασίας AI για έλεγχο"
+      ],
+      "Review each proposed change": [
+        "Ελέγξτε κάθε προτεινόμενη αλλαγή"
+      ],
+      "No proposals are selected automatically. Check facts and context before applying.": [
+        "Καμία πρόταση δεν επιλέγεται αυτόματα. Ελέγξτε τις πληροφορίες και το νόημα πριν την εφαρμογή."
+      ],
+      "%d supported fields": [
+        "%d υποστηριζόμενα πεδία"
+      ],
+      "%d analyzed": [
+        "%d αναλύθηκαν"
+      ],
+      "%d failed": [
+        "%d απέτυχαν"
+      ],
+      "%d unscanned": [
+        "%d δεν ελέγχθηκαν"
+      ],
+      "%d manual areas": [
+        "%d περιοχές χειροκίνητου ελέγχου"
+      ],
+      "Provider: %1$s · %2$d requests reserved · job status: %3$s": [
+        "Πάροχος: %1$s · %2$d δεσμευμένες κλήσεις · κατάσταση: %3$s"
+      ],
+      "Start or continue confirmed AI analysis": [
+        "Έναρξη ή συνέχεια επιβεβαιωμένης ανάλυσης AI"
+      ],
+      "Cancel further analysis": [
+        "Ακύρωση επόμενων αναλύσεων"
+      ],
+      "No applicable proposals. This is not a complete-site scan. Check unsupported areas, split phrases and the analysis status.": [
+        "Δεν υπάρχουν εφαρμόσιμες προτάσεις. Δεν πρόκειται για πλήρη έλεγχο του site. Ελέγξτε τις μη υποστηριζόμενες περιοχές, τις χωρισμένες φράσεις και την κατάσταση ανάλυσης."
+      ],
+      "Approve change %d": [
+        "Έγκριση αλλαγής %d"
+      ],
+      "Before": [
+        "Πριν"
+      ],
+      "Proposed": [
+        "Πρόταση"
+      ],
+      "(Remove this text)": [
+        "(Αφαίρεση αυτού του κειμένου)"
+      ],
+      "Review selected changes": [
+        "Έλεγχος επιλεγμένων αλλαγών"
+      ],
+      "Refresh job status": [
+        "Ανανέωση κατάστασης εργασίας"
+      ],
+      "Final review": [
+        "Τελικός έλεγχος"
+      ],
+      "Apply %d selected text changes. Source content and permissions will be checked again. Third-party emails or webhooks cannot be undone by restoring text.": [
+        "Εφαρμογή %d επιλεγμένων αλλαγών κειμένου. Το περιεχόμενο και τα δικαιώματα θα ελεγχθούν ξανά. Email ή webhooks τρίτων δεν αναιρούνται με την επαναφορά κειμένου."
+      ],
+      "Apply approved changes": [
+        "Εφαρμογή εγκεκριμένων αλλαγών"
+      ],
+      "Back to review": [
+        "Επιστροφή στον έλεγχο"
+      ],
+      "Restore": [
+        "Επαναφορά"
+      ],
+      "Apply": [
+        "Εφαρμογή"
+      ],
+      "User %d": [
+        "Χρήστης %d"
+      ],
+      "Restore is available only while the saved after-version is still current. Newer human edits are never force-overwritten.": [
+        "Η επαναφορά είναι διαθέσιμη μόνο όσο η αποθηκευμένη έκδοση παραμένει η τρέχουσα. Νεότερες ανθρώπινες αλλαγές δεν αντικαθίστανται υποχρεωτικά."
+      ],
+      "Restore original content": [
+        "Επαναφορά αρχικού περιεχομένου"
+      ],
+      "Private job expires: %s. Deleting a source removes this entire job and its restore history.": [
+        "Λήξη ιδιωτικής εργασίας: %s. Η διαγραφή αρχικού περιεχομένου αφαιρεί ολόκληρη την εργασία και το ιστορικό επαναφοράς της."
+      ],
+      "Your recent change history": [
+        "Πρόσφατο ιστορικό αλλαγών"
+      ],
+      "Only jobs whose source content you can still edit are shown. Excerpts and restore snapshots expire after 30 days.": [
+        "Εμφανίζονται μόνο εργασίες των οποίων το περιεχόμενο μπορείτε ακόμη να επεξεργαστείτε. Αποσπάσματα και αντίγραφα επαναφοράς λήγουν μετά από 30 ημέρες."
+      ],
+      "No reviewed changes yet. Start with a small, real update.": [
+        "Δεν υπάρχουν ακόμη ελεγμένες αλλαγές. Ξεκινήστε με μια μικρή, πραγματική ενημέρωση."
+      ],
+      "Exact change": [
+        "Ακριβής αλλαγή"
+      ],
+      "sources": [
+        "πηγές"
+      ],
+      "Open job": [
+        "Άνοιγμα εργασίας"
+      ],
+      "Delete private history": [
+        "Διαγραφή ιδιωτικού ιστορικού"
+      ],
+      "Previous history": [
+        "Προηγούμενο ιστορικό"
+      ],
+      "Next history": [
+        "Επόμενο ιστορικό"
+      ]
+    }
+  }
+}
